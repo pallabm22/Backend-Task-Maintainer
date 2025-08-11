@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
 });
 
 app.post("/create", (req, res) => {
-  const filename = req.body.title.split(" ").join("_") + ".txt";
+  const filename = req.body.title.split(" ").join(" ") + ".txt";
   fs.writeFile(`./files/${filename}`, req.body.details, (err) => {
     if (err) {
       console.log(err);
