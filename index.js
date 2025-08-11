@@ -27,4 +27,5 @@ app.post("/create", (req, res) => {
 
 app.listen(3000, () => {
   console.log("App is running successfully");
+  console.log("App is running without any problem");
 });
